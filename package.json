@@ -1,0 +1,22 @@
+{
+  "name": "website-kat",
+  "version": "1.0.0",
+  "description": "my website (portfolio)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woolykat/website-kat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/woolykat/website-kat/issues"
+  },
+  "homepage": "https://github.com/woolykat/website-kat#readme",
+  "dependencies": {
+    "gulp": "^4.0.0"
+  }
+}

@@ -1,0 +1,176 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+}
+
+p {
+  margin: 25px 0 25px 0;
+  font-family: "Amiri", serif;
+  font-style: normal;
+  line-height: 1.9;
+  font-size: 23px;
+  letter-spacing: -0.003em;
+  color: #484848;
+  font-weight: 100;
+}
+
+header {
+  width: 100%;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 100vh;
+  max-height: 600px;
+}
+
+section {
+  margin: 80px 0px 80px 0;
+}
+
+button {
+  display: block;
+  text-align: center;
+}
+
+
+
+h1 {
+  font-size: 80px;
+  font-family: "Raleway", sans-serif;
+  color: #000066;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 50px;
+  margin: 160px 0 160px 0;
+  letter-spacing: -0.003em;
+  font-family: "Merriweather", serif;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 60px 0 -10px 0;
+  color: #202020;
+  font-family: "Merriweather", serif;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.colour-img-pattern {
+  padding-top: 100px;
+  width: 500px;
+  height: 450px;
+  margin: 0 auto;
+  display: block;
+}
+
+.colour-img-code {
+  width: 750px;
+  height: 550px;
+  margin: 0 auto;
+  display: block;
+}
+
+.colour-img {
+  width: 500px;
+  height: 320px;
+  margin: 0 auto;
+  display: block;
+}
+
+.computer-img {
+  width: 700px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.imageCaption {
+  text-align: center;
+  margin-top: 10px;
+  color: #8c8c8c;
+  padding-bottom: 50px;
+  font-family: sans-serif;
+  font-size: 16px;
+  letter-spacing: 0;
+  margin-bottom: 150px;
+}
+.imageCaption--screen {
+  margin-top: -45px;
+}
+.imageCaption--left {
+  text-align: left;
+}
+
+.hvr-grow {
+  border-radius: 0.1em;
+  font-size: 16px;
+  font-weight: 600;
+  background: #d4eff7;
+  padding: 1em;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #259cc1;
+  font-family: sans-serif;
+}
+
+.link-wra {
+  font-family: "Amiri", serif;
+}
+
+.position-pdf-button {
+  text-align: center;
+  margin: 150px 0;
+}
+
+blockquote {
+  margin: 200px auto;
+  max-width: 600px;
+  display: block;
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: #eee;
+  padding: 1.5em 0 0.5em;
+  position: relative;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: justify;
+}
+
+blockquote:before {
+  content: "“";
+  position: absolute;
+  top: 0em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 3rem;
+  height: 2rem;
+  font: 6em/1.08em "PT Sans", sans-serif;
+  color: #29a329;
+  text-align: center;
+}
+
+blockquote:after {
+  content: "– " attr(cite);
+  display: block;
+  text-align: right;
+  font-size: 20px;
+  color: #29a329;
+  padding-top: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */
