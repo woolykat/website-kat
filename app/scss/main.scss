@@ -1,176 +1,742 @@
-@charset "UTF-8";
+@import "variables";
+
 body {
-  margin: 0;
+  font-family: 'Assistant', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  max-width: 800px;
+  margin:0 auto;
 }
 
-p {
-  margin: 25px 0 25px 0;
-  font-family: "Amiri", serif;
-  font-style: normal;
-  line-height: 1.9;
-  font-size: 23px;
-  letter-spacing: -0.003em;
-  color: #484848;
-  font-weight: 100;
+#container {
+  height: 100%;
+  margin: 0 auto; 
 }
 
-header {
-  width: 100%;
-  padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  min-height: 100vh;
-  max-height: 600px;
-}
-
-section {
-  margin: 80px 0px 80px 0;
-}
-
-button {
-  display: block;
+.content-wrapper{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  background: linear-gradient(135deg, #ff5f6d 0%, #ffc371 100%);
+}
+.hamburger{
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  cursor: pointer;
+  i{
+    font-size: 25px;
+    color: white;
+  }
 }
 
+/*------------------Header------------------*/
+.header {
+  height: 100vh;
 
+     &--left-half {
+        background-color: $opioid-light;
+        position: absolute;
+        left: 0px;
+        width: 50%;
+        height: 100%;
+    }
 
-h1 {
-  font-size: 80px;
-  font-family: "Raleway", sans-serif;
-  color: #000066;
-  margin-top: 20px;
+    &--right-half {
+        background-color: rgb(102, 153, 255);
+        position: absolute;
+        right: 0px;
+        width: 50%;
+        height: 100%;
+    }
+
+    &--top-title-section {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+    &--pills-img-top {
+      width: 400px;
+    height: 230px;
+    position: absolute;
+    }
+
+    &--vr-headset-img-top {
+    width: 280px;
+    height: 230px;
+    position: absolute;
+    }
+
+    &--pill-img-div {
+    display: block;
+    margin-top: 50%;
+    }
+
+    &--vr-img-div {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50%;
+    }
+
 }
 
-h2 {
-  font-size: 50px;
-  margin: 160px 0 160px 0;
-  letter-spacing: -0.003em;
-  font-family: "Merriweather", serif;
+.h1-top-header {
+    font-size: 55px;
+    font-family: 'Anton', sans-serif;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-bottom: -19px;
+    line-height: 70px; 
+
+    &--colour-pill {
+     color: $opioid-dark;
+    }
+
+    &--colour-vr {
+     color: $virtual-reality-dark;
+    }
+ }
+
+/*------------------Question------------------*/
+.question {
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+    margin: 10% 0 10% 0;
 }
 
 h3 {
-  font-size: 26px;
-  font-weight: 600;
-  margin: 60px 0 -10px 0;
-  color: #202020;
-  font-family: "Merriweather", serif;
-}
-
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  text-align: justify;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.colour-img-pattern {
-  padding-top: 100px;
-  width: 500px;
-  height: 450px;
-  margin: 0 auto;
-  display: block;
-}
-
-.colour-img-code {
-  width: 750px;
-  height: 550px;
-  margin: 0 auto;
-  display: block;
-}
-
-.colour-img {
-  width: 500px;
-  height: 320px;
-  margin: 0 auto;
-  display: block;
-}
-
-.computer-img {
-  width: 700px;
-  height: 500px;
-  margin: 0 auto;
-}
-
-.imageCaption {
-  text-align: center;
-  margin-top: 10px;
-  color: #8c8c8c;
-  padding-bottom: 50px;
-  font-family: sans-serif;
-  font-size: 16px;
-  letter-spacing: 0;
-  margin-bottom: 150px;
-}
-.imageCaption--screen {
-  margin-top: -45px;
-}
-.imageCaption--left {
-  text-align: left;
-}
-
-.hvr-grow {
-  border-radius: 0.1em;
-  font-size: 16px;
-  font-weight: 600;
-  background: #d4eff7;
-  padding: 1em;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-}
-
-a {
-  color: #259cc1;
-  font-family: sans-serif;
-}
-
-.link-wra {
-  font-family: "Amiri", serif;
-}
-
-.position-pdf-button {
-  text-align: center;
-  margin: 150px 0;
-}
-
-blockquote {
-  margin: 200px auto;
-  max-width: 600px;
-  display: block;
-  border-width: 2px 0;
-  border-style: solid;
-  border-color: #eee;
-  padding: 1.5em 0 0.5em;
-  position: relative;
   font-size: 25px;
-  line-height: 35px;
-  text-align: justify;
+  color:#000 ;
+}   
+
+.grey {
+  color:#474747;
+  font-weight: 300;
 }
 
-blockquote:before {
-  content: "“";
-  position: absolute;
-  top: 0em;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #fff;
-  width: 3rem;
-  height: 2rem;
-  font: 6em/1.08em "PT Sans", sans-serif;
-  color: #29a329;
-  text-align: center;
+/*------------------Introduction------------------*/
+.introduction {
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+    margin: 100px 0px 15px;
 }
-
-blockquote:after {
-  content: "– " attr(cite);
-  display: block;
-  text-align: right;
+/*------------------Paragraphs------------------*/
+.paragraphs {
+  max-width: 750px;
+  margin:0 auto;
+  margin: 0 0 25px 0;
+  font-family: 'Assistant', sans-serif;
+  font-style: normal;
+  line-height: 1.6;
   font-size: 20px;
-  color: #29a329;
-  padding-top: 10px;
+  letter-spacing: -.003em;
+  color: #484848;
+  font-weight: 100;
+  &--bibliography {
+    font-size: 18px;
+    color: $opioid-dark;
+    margin: 30px 0 30px 0px;
+  }
+   &--bibliography-vr {
+    font-size: 18px;
+    color: $virtual-reality-dark;
+    margin: 30px 0 30px 0px;
+}
 }
 
-/*# sourceMappingURL=main.css.map */
+b {
+  font-weight: 800;
+  color: #202020;
+}
+/*------------------Title sections - The Opioid Crisis and Virtual Reality------------------*/
+.title-sections {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20% 0 20% 0;
+}
+
+.heading-left {
+    float:left;
+      }
+
+.img-right {
+    float:right;
+    margin-right: 20%;
+    margin-top: -5%;
+      }
+
+.img-size {
+    width: 130px;
+    height: 130px;
+    }
+.img-size--vr {
+  width: 130px;
+    height: 130px;
+}
+  
+
+.h2-title-heading {
+   font-size: 50px;
+  margin: 160px 0 160px 0;
+  font-family: 'Anton', sans-serif;
+  color: #55010C;
+  display:inline;
+
+   &--colour-pill {
+     color: $opioid-dark;
+    }
+
+    &--colour-vr {
+     color: $virtual-reality-dark;
+    }
+}    
+
+.width-130 {
+  width: 130%;
+}
+
+/*------------------Header Navigation------------------*/
+
+.content-wrapper{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #ff5f6d 100%, #060155 100%);
+}
+.hamburger{
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  cursor: pointer;
+  i{
+    font-size: 28px;
+    color: #000;
+  }
+}
+
+.nav{
+    &-canvas{
+        width: 450px;
+        background: $virtual-reality-dark;
+        height: 100vh;
+        position: fixed;
+        overflow-x:auto;
+        z-index: 2000;
+        padding: 50px 0;
+        top: 0;
+        left: -450px;
+        transition: .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        .close{
+            position: absolute;
+            right: 10px; top: 20px;
+            outline: 0;
+            opacity: 1;
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            cursor: pointer;
+            transition: .3s ease;
+            i{
+                font-size: 15px;
+                color: white;
+                text-shadow: none;
+            }
+            &:hover{
+              transform: rotate(90deg);
+            }
+        }
+        &-menu{
+            ul{
+                margin-bottom: 0;
+                padding-left: 0;
+                list-style: none;
+                li{
+                    a{
+                        color: #fff;
+                        font-size: 18px;
+                        font-weight: 400;
+                        padding: 15px 40px;
+                        display: block;
+                        text-decoration: none;
+                        position: relative;
+                        z-index: 1;
+                        transition: .3s cubic-bezier(0.25, 0.46, 0.45, 0.94) .05s;
+                        &:hover{
+                          transform: translateX(5px);
+                          color: rgb(255, 80, 80);
+                        }
+                    }
+                }
+            }
+        }
+        &.open{
+            left: 0;
+        }
+    }
+}
+
+.canvas-overlay{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .2);
+    z-index: 1999;
+    transition: .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    visibility: hidden;
+    opacity: 0;
+    &.on{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.fa-bars:before {
+  font-size: 40px;
+  color: $opioid-dark;
+}
+
+.fa-times:before {
+    font-size: 25px;
+    color: $opioid-light;
+}
+
+/*------------------Subheading------------------*/
+.h5-opioid-subheadings {
+    font-size: 22px;
+    color: rgb(255, 80, 80);
+    margin: 60px 0px 15px;
+}
+
+.mar-top-0 {
+  margin-top: 10px;
+}
+
+/*------------------Small quotes Opioids------------------*/
+.small-quotes {
+  padding: 0 1em;
+  margin: 15% 0 15% 0;
+  font-family: 'Assistant', sans-serif;
+  line-height: 40px;
+  word-break: break-word;
+}
+
+.indent {
+    text-indent: -36px;
+  }
+
+.quote-and-image-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 5% 0 5% 0;
+}
+
+.pd-right {
+  padding-right: 33px;
+}
+
+.mar-b{
+  margin-bottom: 5%;
+}
+
+.heading-opioid {
+  float: left;
+}
+
+.pill-box-img {
+    width: 240px;
+    margin: 10% 0 10% 0;
+
+    &--vr-shapes {
+      margin-top: 0%;
+    }
+}
+
+.margin-top-15 {
+  margin-top: -15%;
+}
+
+.mr-top-10 {
+  margin-top: 10%;
+}
+
+
+.pill-injection {
+    width: 340px;
+    margin: 10% 0 10% 0;
+    padding-right: 25px;
+}
+
+.dollar-pill-500 {
+    width: 340px;
+    margin: 10% 0 10% 0;
+    padding-right: 40px;
+    margin-top: 20%;
+}
+
+.inline {
+  display:inline;
+}
+
+q:before {
+  content: open-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: -9px;
+  position: relative;
+  top: 5px;
+  color: rgb(255, 80, 80);
+  font-size: 1.5em;
+  margin-left: -53px;
+}
+q:after {
+  content: close-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: 9px;
+  position: relative;
+  top: 14px;
+  color: rgb(255, 80, 80);
+  font-size: 1.5em;
+}
+
+q {
+  font-size: 38px;
+  padding: 10px 20px;
+  color: #420111;
+  line-height: 43px;
+}
+
+/*------------------Block Quotes------------------*/
+.blockquote-money {
+    padding: 0 1em;
+    margin: 30% 0 30% 0;
+}
+
+.money-quote {
+  font-size:26px;
+  line-height: 43px;
+}
+
+.blockquote {
+  line-height:1.6;
+  position: relative;
+  padding-left: 45px;
+
+    &--opioid {
+        border-left: 8px solid #420111;
+        height: 230px;
+    }
+}
+
+span {
+    line-height: 30px;
+}
+
+.cite-red {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(255, 80, 80);
+}
+
+/*------------------Virtual Reality Medicine small quote------------------*/
+.vr-quotes {
+    color: rgb(102, 153, 255);
+}
+
+.vr-quote {
+      margin-bottom: 0;
+}
+
+.margin-left {
+  margin-left: 45px;
+}
+
+.vr-quote q:before  { color:#060155;
+                      margin-left:0;}
+.vr-quote q:after  { color:#060155;}
+
+.cite-blue {
+  font-weight: bold;
+  font-size: 18px;
+  color: #060155;
+}
+
+
+/*------------------Opioid Images------------------*/
+ .money-pill-i {
+    width: 460px;
+    height: 200px;
+  }
+
+.max-width {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+/*------------------Virtual Reality Images------------------*/
+.dolphin-img {
+  width: 300px;
+  height: 200px;
+}
+
+/*------------------Virtual Reality Medicine------------------*/
+.vr-subheadings {
+    font-size: 23px;
+    color: rgb(102, 153, 255);
+    margin: 10px 0px 10px;
+}
+
+.opioids-h4 {
+  font-size: 30px;
+  margin: 0px 0 -30px 0;
+  color: #55010C;
+  margin-bottom: 10px;
+}
+
+.vr-h4 {
+  font-size: 30px;
+  margin: 0 0 -30px 0;
+  color: #060155;
+  margin-bottom: 10px;
+}
+
+.margin-top {
+  margin-top: 10%;
+}
+/*------------------Links in essay------------------*/
+.documentary-link {
+  color: $opioid-dark;
+  background-color: $opioid-link-bg;
+}
+
+.freethink-link {
+  color: $virtual-reality-dark;
+  background-color: $vr-link-bg;
+}
+
+/*------------------bullet point list------------------*/
+ul {
+   list-style: none;
+   margin: 40px;
+}
+
+.opioid-list {
+  color: $opioid-dark;
+  font-size:21px;
+  padding: 5px 0 5px 0;
+}
+
+.vr-list {
+  color: $virtual-reality-dark;
+  font-size:21px;
+  padding: 5px 0 5px 0;
+}
+
+li.vr-list::before {
+  content: "\2022";
+  color: $virtual-reality-light;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+  font-size: 25px;
+}
+
+li.opioid-list::before {
+  content: "\2022";
+  color: $opioid-light;;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+  font-size: 25px;
+}
+
+.margin-0 {
+  margin:0;
+}
+
+i.opioids-refs {
+  color: $opioid-light;
+  max-width:800px;
+  word-break: break-all;
+}
+
+i.vr-refs {
+  color: $virtual-reality-light;
+  max-width:800px;
+  word-break: break-all;
+}
+
+.margin-bottom-100 {
+  margin-bottom: 100px;
+}
+
+.margin-bottom-0 {
+  margin-bottom: 0;
+}
+
+.margin-top-6 {
+  margin-top: 6%;
+}
+
+/*------------------media queries------------------*/
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+body {
+  margin: 0 50px 0 50px;
+  max-width: 100%;
+}
+
+.paragraphs {
+  max-width: 400px;
+  font-size: 16px;
+  &--bibliography {
+    font-size: 14px;
+  }
+   &--bibliography-vr {
+    font-size: 14px;
+    margin: 20px 0 20px 0px;
+}
+}
+
+
+.h2-title-heading {
+   font-size: 35px;
+}
+
+.opioids-h4 {
+  font-size: 20px;
+}
+
+.img-size {
+    width: 70px;
+    height: 70px;
+    margin-right: -95px;
+    margin-top: -10px;
+    }
+
+.img-size--vr {
+    margin-top: -80px;
+    margin-right: -50px;
+    width: 80px;
+    height: 80px;
+    }
+
+ .vr-h4 {
+  font-size: 20px;
+    margin-top: 70px;
+    width: 100%;
+}   
+
+.heading-left {
+  max-width: 300px;
+}
+
+.vr-subheadings {
+  font-size: 18px;
+}
+
+.dollar-pill-500 {
+  width:250px;
+}
+
+.header {
+     &--pills-img-top {
+      width: 150px;
+      height: 100px;
+    }
+
+    &--vr-headset-img-top {
+    width: 125px;
+    height: 100px;
+    margin-left: -25px;
+    }
+
+     &--pill-img-div {
+    margin-top: 65%;
+    margin-left: -25px;
+    }
+  }
+
+  .h1-top-header {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: -19px;
+    line-height: 50px; 
+ }
+
+ h3 {
+  font-size: 20px;
+}   
+
+.heading-opioid {
+  float: none;
+}
+
+.vr-quote {
+  max-width: 380px;
+}
+
+q {
+  font-size: 20px;
+}
+
+ul {
+    margin: 35px;
+    padding: 0;
+    max-width: 300px;
+}
+
+.opioid-list, .vr-list {
+  font-size: 16px;
+}
+
+ .pill-box-img {
+  width: 200px;
+ }
+
+ .h5-opioid-subheadings {
+  font-size: 18px;
+ }
+
+ .quote-and-image-section {
+   padding: 5% 0 5% 0;
+ }
+
+ .pill-injection {
+  width: 300px;
+ }
+
+ .pill-box-img {
+    width: 180px;
+    margin-top: 10px;
+}
+
+#bibliography {
+  max-width:400px;
+}
+
+i.vr-refs {
+  max-width:300px;
+  word-break: break-all;
+}
+
+
+}
